@@ -91,3 +91,8 @@
 .icon-qq:before {
   content: "\e69e";
 }
+/* 中文字体 */
+@font-face {font-family: "myfonts";
+  src: url('../fonts/d9a905b81d23890c075b9bbd0307ed15.ttf');
+  
+}

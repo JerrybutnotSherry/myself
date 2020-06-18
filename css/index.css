@@ -9,7 +9,7 @@ ul li{
 	list-style-type:none;
 }
 body{
-	font-family: 'jdzhonyuanjian210ddb238021ddb','SFSlapstickComicShaded';
+	font-family: 'myfonts','SFSlapstickComicShaded';
 }
 body.home{
 	/* 背景图片重复 */
