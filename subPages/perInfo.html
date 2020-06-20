@@ -3,39 +3,22 @@
 <head>
 	<meta charset="UTF-8">
 	<title>perInfo</title>
-	<!-- 首页 -->
+	<!-- 主样式 -->
 	<link rel="stylesheet" type="text/css" href="../css/index.css">
-	<!-- 图标字体 -->
+	<!-- 图标字体样式 -->
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
-	<!-- 中文字体 -->
-	<!-- <link href='https://cdn.repository.webfont.com/webfonts/nomal/138715/19673/5ed31f32f629d810741a30eb.css' rel='stylesheet' type='text/css' /> -->
-	<!-- <script type="text/javascript" src="https://cdn.repository.webfont.com/wwwroot/js/wf/youziku.api.min.js"></script>
-	<script type="text/javascript">
-		$webfont.load("body", "928a084122c6419e94ad27d839d4f9d5", "jdzhonyuanjian");
-		/*$webfont.load("#id1,.class1,h1", "928a084122c6419e94ad27d839d4f9d5", "jdzhonyuanjian");*/
-		/*．．．*/
-		$webfont.draw();
-	</script> -->
-	<!-- 英文字体 -->
-	<link href='http://cdn.repository.webfont.com/webfonts/nomal/138715/41278/5ed4c439f629d8064ce55796.css' rel='stylesheet' type='text/css' />
 </head>
 <body class="perInfo">
-	<!-- <div class="perInfo_heading">
-		<h2>ABOUT ME</h2>
-		<p>This is my personal information of the collage life.</p>
-		<ul>
-			<li>姓名</li>
-			<li>性别</li>
-			<li>院校</li>
-			<li>绩点</li>
-			<li>联系方式</li>
-			<li>项目经历，在项目中担任的角色</li>
-			<li>擅长的技术语言，应用了哪些技术栈</li>
-			<li>时间节点</li>
-			<li>博客链接、个人作品、个人技术栈链接</li>
-			<li>个人评价</li>
-		</ul>
-	</div> -->
+	<!-- 导航栏 -->
+	<div id="nav">
+		<div class="inner">
+			<div class="menu">
+				<ul>
+					<li><a href="../index.html">HOME</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
 	<!-- 侧栏 -->
 	<div id="perInfo_aside">
 		<div class="aside">
@@ -55,7 +38,7 @@
 			</div>
 		</div>
 	</div>
-
+	<!-- 主体内容区 -->
 	<div id="perInfo_container">
 		<div class="perInfo_heading">
 			<h2>ABOUT ME</h2>
@@ -67,6 +50,7 @@
 				<div id="perInfo_container_1_1">
 					<div class="title">基本信息</div>
 					<div class="content">
+						<!-- 内容中包含一个无序列表 -->
 						<ul>
 							<li>
 								<label class="key">姓名</label>
@@ -94,19 +78,10 @@
 						</ul>
 					</div>
 				</div>
-				<div id="perInfo_container_1_2">
-					<div class="title">掌握</div>
-					<div class="content">
-						<ul>
-							<li>java</li>
-							<li>C++</li>
-							<li>C#</li>
-							<li>python</li>
-							<li>mysql</li>
-						</ul>
-					</div>
+				<div>
+					<!-- 右侧图片的添加增加美感 -->
+					<img src="../img/0ba27d225a4b6a427bb82895ccca9261.png" style="width: 300px;">
 				</div>
-				
 			</div>
 		</div>
 		<!-- 2号内容区perInfo_container_2，内部又分为两部分perInfo_container_2_1、perInfo_container_2_2 -->
@@ -152,28 +127,91 @@
 					</div>
 				</div>
 				<div id="perInfo_container_2_2">
-					<div class="title">绩点</div>
+					<div class="title">技能</div>
 					<div class="content">
-					</div>
 						<div class="progress-bullets">
-							<span class="progress-bar">
-                            <span class="bullet fill"></span>
-                            <span class="bullet fill"></span>
-                            <span class="bullet fill"></span>
-                            <span class="bullet fill"></span>
-                            <span class="bullet fill"></span>
-                            <span class="bullet fill"></span>
-                            <span class="bullet fill"></span>
-                            <span class="bullet"></span>
-                            <span class="bullet"></span>
-                            <span class="bullet"></span>
-                        </span>
+							<ul>
+								<li>
+									<label class="key">java</label>
+									<!-- 进程条，分别用不同的样式来区分实心和空心圆 -->
+									<span class="progress-bar">
+										<span class="bullet fill"></span>
+										<span class="bullet fill"></span>
+										<span class="bullet fill"></span>
+										<span class="bullet fill"></span>
+										<span class="bullet fill"></span>
+										<span class="bullet fill"></span>
+										<span class="bullet fill"></span>
+										<span class="bullet fill"></span>
+										<span class="bullet"></span>
+										<span class="bullet"></span>
+									</span>
+								</li>
+								<li>
+									<label class="key">C++</label>
+									<span class="progress-bar">
+										<span class="bullet fill"></span>
+										<span class="bullet fill"></span>
+										<span class="bullet fill"></span>
+										<span class="bullet fill"></span>
+										<span class="bullet fill"></span>
+										<span class="bullet fill"></span>
+										<span class="bullet fill"></span>
+										<span class="bullet"></span>
+										<span class="bullet"></span>
+										<span class="bullet"></span>
+									</span>
+								</li>
+								<li>
+									<label class="key">C#</label>
+									<span class="progress-bar">
+										<span class="bullet fill"></span>
+										<span class="bullet fill"></span>
+										<span class="bullet fill"></span>
+										<span class="bullet fill"></span>
+										<span class="bullet fill"></span>
+										<span class="bullet fill"></span>
+										<span class="bullet"></span>
+										<span class="bullet"></span>
+										<span class="bullet"></span>
+										<span class="bullet"></span>
+									</span>
+								</li>
+								<li>
+									<label class="key">python</label>
+									<span class="progress-bar">
+										<span class="bullet fill"></span>
+										<span class="bullet fill"></span>
+										<span class="bullet fill"></span>
+										<span class="bullet"></span>
+										<span class="bullet"></span>
+										<span class="bullet"></span>
+										<span class="bullet"></span>
+										<span class="bullet"></span>
+										<span class="bullet"></span>
+										<span class="bullet"></span>
+									</span>
+								</li>
+								<li>
+									<label class="key">mysql</label>
+									<span class="progress-bar">
+										<span class="bullet fill"></span>
+										<span class="bullet fill"></span>
+										<span class="bullet fill"></span>
+										<span class="bullet fill"></span>
+										<span class="bullet fill"></span>
+										<span class="bullet fill"></span>
+										<span class="bullet fill"></span>
+										<span class="bullet fill"></span>
+										<span class="bullet"></span>
+										<span class="bullet"></span>
+									</span>
+								</li>
+							</ul>
 						</div>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div id="perInfo_container_3">
-			<div class="inner"></div>
 		</div>
 	</div>
 </body>
